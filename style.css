@@ -1,0 +1,132 @@
+:root{
+ --soft-orange: hsl(35, 77%, 62%);
+ --soft-red: hsl(5, 85%, 63%);
+ --off-white: hsl(36, 100%, 99%);   
+ --grayish-blue: hsl(233, 8%, 79%);
+ --dark-grayish-blue: hsl(236, 13%, 42%);
+ --very-dark-blue: hsl(240, 100%, 5%);
+ --mobile: 375px;
+ --desktop: 1440px;
+}
+
+body{
+    background-color: var(--off-white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+p{
+    font-size: 15px;
+    color: var(--dark-grayish-blue);
+}
+
+/* navigation bar */
+.container{
+    width:80%;
+    margin: 7% auto 4%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-items{
+    list-style: none;
+}
+.nav-items ul{
+    padding-left:0;
+}
+
+.nav-list{
+    display: inline;
+    margin-left: 25px;
+    color: var(--dark-grayish-blue);
+    transition: color 200ms ease-out;
+}
+.nav-list:hover{
+    color:var(--soft-red);
+    cursor: pointer;
+}
+.web-3-desktop{
+    width: 100%;
+}
+.desktop-img{
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.left-bottom{
+    display: grid;
+    grid-template-columns: 49% 51%;
+}
+/* button  */
+.btn{
+    background-color:var(--very-dark-blue);
+    color: var(--off-white);
+    border: none;
+    padding: 15px 20px;
+    letter-spacing: 0.3em;
+    position:absolute;
+    bottom: 0;
+    transition: background-color 300ms ease-out;
+}
+.btn:hover{
+    background-color: var(--soft-red);
+}
+
+.right{
+    padding: 0 5%;
+    background-color: var(--very-dark-blue);
+}
+.new{
+    color:var(--soft-orange);
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.right-item h3{
+    color: var(--off-white);
+}
+.right-item p{
+    color: var(--grayish-blue);
+}
+hr{
+    border-top: 1px solid var(--grayish-blue);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.mid{
+    width:80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 65.66% 32.33%;
+    column-gap: 2%;
+    box-sizing: border-box;
+}
+.left-bottom-left{
+    font-weight: 800;
+    font-size:  50px;
+    line-height: 1;
+}
+.left-bottom-left h1{
+    margin: 20px 0;
+}
+.bottom{
+    width:80%;
+    margin: 4% auto;
+    display: grid;
+    grid-template-columns: 32.33% 32.33% 32.33%;
+    column-gap: 1.5%;
+}
+.bottom-item img{
+    float: left;
+    max-width: 40%;
+    margin-right: 5%;
+}
+
+.bottom-item h1{
+    color: var(--grayish-blue);
+    margin: 0;
+}
+.a{
+    position: relative;
+    margin-top:10px;
+}
